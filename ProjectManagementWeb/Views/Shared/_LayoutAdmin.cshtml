@@ -33,6 +33,27 @@
             </div>
         </div>
     </nav>
+    <nav class="navbar custom-navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="~/Content/images/logo_syncmaster.png" alt="Logo" style="width:70px" class="rounded-pill" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="collapsibleNavbar">
+                <div class="fm-link-menu">
+                    <a>@Html.ActionLink("SyncMaster", "HomeAdmin", "Admin")</a>
+                </div>
+            </div>
+            <div class="justify-content-end">
+                <a href="@Url.Action("Login", "Relog")" class="log-out">
+                    <i class="fas fa-sign-out-alt"></i>
+                    <span style="padding-left: 5px;">Logout</span>
+                </a>
+            </div>
+        </div>
+    </nav>
     <div class="content">
         <div class="slidebar">
             <h4 class="text-center py-3">Admin Panel</h4>
